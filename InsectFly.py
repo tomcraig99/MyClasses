@@ -2,17 +2,30 @@ import InsectClass as i
 
 
 def main():
-    myInsect = i.Insect()
+    mosquito = i.Insect(2, 2)
+    housefly = i.Insect(6, 10)
 
     print(
-        "This insect has",
-        myInsect.get_wings(),
+        "This mosquito has",
+        mosquito.get_wings(),
         "wings and",
-        myInsect.get_legs(),
+        mosquito.get_legs(),
         "legs",
     )
-    myInsect.fly()
-    print("The insect flew", myInsect.get_distance(), "miles")
+
+    print(
+        "This housefly has",
+        housefly.get_wings(),
+        "wings and",
+        housefly.get_legs(),
+        "legs",
+    )
+
+    mosquito.fly()
+    print("The mosquito flew", mosquito.get_distance(), "mile(s)")
+
+    housefly.fly()
+    print("The housefly flew", housefly.get_distance(), "mile(s)")
 
 
 main()
